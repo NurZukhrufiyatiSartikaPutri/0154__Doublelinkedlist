@@ -112,6 +112,12 @@ private:
         // step 3
         current->prev->next = current->next;
 
+                // step 4
+        if (current->next != NULL)
+        current->next->prev = current->prev;
+    }
+
+
 
 
 
