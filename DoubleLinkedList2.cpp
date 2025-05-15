@@ -13,7 +13,22 @@ public:
 class DobleLinkedList
 {
 private:
+     Node *START;    
+
+     public:
+     DobleLinkedList()
+     {
+         START = NULL;
+     }
+
+   void addNode()
+   {
+    int nim;
+    cout << "\nEnter the roll member of student :";
+    cin >> nim;
+
     
+
 
        
 };
