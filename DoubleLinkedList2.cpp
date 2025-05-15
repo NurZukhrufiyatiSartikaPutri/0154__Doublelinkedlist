@@ -85,12 +85,20 @@ private:
         cout << "\nList is empty" << endl;
         return;
     }
-    
+
     cout << "\nMasukkan NIM yang akan didelete";
     int rollNo;
     cin >> rollNo;
 
     Node *current = START;
+
+     //step 1: tranverse the list to find the node
+    while (current !=NULL && current->noMhs !=rollNo)
+    {
+        current = current->next;
+        return;
+    }
+
 
 
 
