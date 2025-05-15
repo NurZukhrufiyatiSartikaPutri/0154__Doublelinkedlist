@@ -108,6 +108,11 @@ private:
         }
     }
     else
+    {
+        // step 3
+        current->prev->next = current->next;
+
+
 
 
 
