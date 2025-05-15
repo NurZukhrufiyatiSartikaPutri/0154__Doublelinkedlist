@@ -116,6 +116,11 @@ private:
         if (current->next != NULL)
         current->next->prev = current->prev;
     }
+        // step 5
+    delete current;
+    cout << "Record with roll member" << rollNo << "deleted" << endl;
+ }
+ 
 
 
 
