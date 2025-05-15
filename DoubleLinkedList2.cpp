@@ -98,6 +98,16 @@ private:
         current = current->next;
         return;
     }
+    //step 2: if node is at the beginning
+    if (current == START)
+    {
+        START = current->next;
+        if(START != NULL) // step 2a : START = START.next
+        {
+            START->prev = NULL; // step 2b : START.prev = NULL
+        }
+    }
+    else
 
 
 
