@@ -10,3 +10,10 @@ public:
     Node *prev;
 };
 
+class DobleLinkedList
+{
+private:
+    
+
+       
+};
