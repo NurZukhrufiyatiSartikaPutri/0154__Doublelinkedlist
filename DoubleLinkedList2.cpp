@@ -27,6 +27,11 @@ private:
     cout << "\nEnter the roll member of student :";
     cin >> nim;
 
+
+    //step 1: Allocate memory for new node
+    Node *newNode =new Node();
+
+
     
 
 
