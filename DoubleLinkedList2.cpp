@@ -183,6 +183,26 @@ void retraverse()
             return;
     
         }
+
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+           //step 1: Traverse to finf matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+        //step 2: output result
+        if (current == NULL)
+        {
+            cout << "Record not found\n";
+        }
+        else 
+        {
+            cout << "Record found\n";
+            cout << "Roll number: " << current->noMhs << endl;
+        }
     }        
 
  
